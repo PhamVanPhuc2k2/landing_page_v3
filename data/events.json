@@ -1,8 +1,8 @@
 {
   "site": {
-    "kicker": "Lưu trữ truyền thông • 2019 – 2025",
+    "kicker": "Lưu trữ truyền thông",
     "title": "Thủ tướng\nđối thoại với nông dân",
-    "desc": "Hành trình sáu kỳ Hội nghị mà người đứng đầu Chính phủ ngồi lại, trực tiếp lắng nghe nông dân, hợp tác xã, doanh nghiệp nêu kiến nghị và giải đáp tại chỗ — được ghi lại qua loạt bài tư liệu trên Báo Điện tử Dân Việt."
+    "desc": "Hành trình bảy lần tổ chức Hội nghị, nơi người đứng đầu Chính phủ ngồi lại, trực tiếp lắng nghe nông dân, hợp tác xã, doanh nghiệp nêu kiến nghị và giải đáp tại chỗ — được ghi lại qua loạt bài tư liệu trên Báo Điện tử Dân Việt."
   },
   "events": [
     {
@@ -10,15 +10,18 @@
       "id": "3036",
       "ordinal": "Lần thứ 7",
       "pm": "Thủ tướng Phạm Minh Chính",
-      "date": "10/12/2025",
+      "date": "Tháng 12/2025",
       "location": "Hà Nội",
       "theme": "Ứng dụng khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số trong nông dân",
       "title": "Hội nghị Thủ tướng Chính phủ đối thoại với nông dân năm 2025",
       "cover": "./images/hoi-nghi-2025.png",
       "summary": "Hội nghị diễn ra tại Hà Nội với chủ đề “Ứng dụng khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số trong nông dân”. Trước hội nghị, hơn 5.000 ý kiến của nông dân đã được gửi về qua Báo Điện tử Dân Việt.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" },
-        { "value": 5000, "suffix": "+", "label": "Ý kiến nông dân gửi về" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nam-2025-channel3036/"
     },
@@ -34,7 +37,11 @@
       "cover": "",
       "summary": "Sau hội nghị, Thủ tướng có văn bản truyền đạt ý kiến chỉ đạo, giao các Bộ, ngành và địa phương triển khai giải pháp hỗ trợ nông dân; Dân Việt theo sát việc thực hiện các kết luận này trong năm 2025.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nam-2024-channel2919/"
     },
@@ -43,14 +50,18 @@
       "id": "2912",
       "ordinal": "Lần thứ 5",
       "pm": "Thủ tướng Phạm Minh Chính",
-      "date": "30/12/2023",
+      "date": "Tháng 12/2023",
       "location": "Hà Nội",
       "theme": "",
       "title": "Hội nghị Thủ tướng đối thoại với Nông dân Việt Nam năm 2023",
       "cover": "",
       "summary": "Cuối năm 2023, Thủ tướng Chính phủ trực tiếp đối thoại với đại diện nông dân cả nước. Các bài “nhìn lại” tổng hợp những vấn đề nông dân đặt ra và cam kết giải quyết của Chính phủ.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": ""
     },
@@ -59,15 +70,18 @@
       "id": "2697",
       "ordinal": "Lần thứ 4",
       "pm": "Thủ tướng Phạm Minh Chính",
-      "date": "29/5/2022",
+      "date": "Tháng 5/2022",
       "location": "Sơn La",
       "theme": "",
       "title": "Hội nghị Thủ tướng đối thoại với nông dân năm 2022",
       "cover": "",
       "summary": "Hội nghị đầu tiên do Thủ tướng Phạm Minh Chính chủ trì, tổ chức tại Sơn La trong bối cảnh dịch Covid-19 được kiểm soát và cả nước bước vào giai đoạn phục hồi, phát triển kinh tế. Khoảng 300 nông dân tiêu biểu trực tiếp đối thoại.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" },
-        { "value": 300, "suffix": "", "label": "Nông dân tiêu biểu dự đối thoại" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nam-2022-channel2697/"
     },
@@ -76,14 +90,18 @@
       "id": "2258",
       "ordinal": "Lần thứ 3",
       "pm": "Thủ tướng Nguyễn Xuân Phúc",
-      "date": "28/9/2020",
+      "date": "Tháng 9/2020",
       "location": "TP Buôn Ma Thuột, Đắk Lắk",
       "theme": "",
       "title": "Hội nghị Thủ tướng đối thoại với nông dân năm 2020",
       "cover": "",
       "summary": "Lần thứ ba Thủ tướng trực tiếp đối thoại với nông dân, tổ chức tại Buôn Ma Thuột (Đắk Lắk) trong bối cảnh cả nước vừa chống dịch Covid-19 vừa duy trì sản xuất nông nghiệp.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": ""
     },
@@ -99,8 +117,32 @@
       "cover": "",
       "summary": "Hội nghị lần thứ hai, tổ chức tại Cần Thơ với khoảng 600 đại biểu là nông dân và đại diện các Bộ, ngành, địa phương, nơi nông dân nói thẳng những khó khăn của nông nghiệp, nông thôn với người đứng đầu Chính phủ.",
       "stats": [
-        { "value": "$count", "suffix": "", "label": "Bài báo tư liệu" },
-        { "value": 600, "suffix": "", "label": "Đại biểu dự Hội nghị" }
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "year": 2018,
+      "id": "1378",
+      "onlyYear": 2018,
+      "ordinal": "Lần thứ 1",
+      "pm": "Thủ tướng Nguyễn Xuân Phúc",
+      "date": "Tháng 4/2018",
+      "location": "Hải Dương",
+      "theme": "Tháo gỡ vướng mắc; Khơi dòng động lực; Tiếp đà 30 năm Đổi mới",
+      "title": "Hội nghị Thủ tướng Chính phủ đối thoại với nông dân năm 2018",
+      "cover": "",
+      "summary": "Lần đầu tiên trong lịch sử, Thủ tướng Chính phủ trực tiếp đối thoại với nông dân Việt Nam. Hội nghị do Trung ương Hội Nông dân Việt Nam phối hợp với Văn phòng Chính phủ và UBND tỉnh Hải Dương tổ chức, với 600 đại biểu gồm nông dân và lãnh đạo các Bộ, ngành.",
+      "stats": [
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Bài báo tư liệu"
+        }
       ],
       "link": ""
     }

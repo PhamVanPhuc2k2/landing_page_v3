@@ -4,9 +4,9 @@
  * `api`: trình duyệt lấy bài trực tiếp từ CMS Dân Việt; `articles` là bản dự phòng.
  */
 window.SITE = {
-    "kicker": "Lưu trữ truyền thông • 2019 – 2025",
+    "kicker": "Lưu trữ truyền thông",
     "title": "Thủ tướng\nđối thoại với nông dân",
-    "desc": "Hành trình sáu kỳ Hội nghị mà người đứng đầu Chính phủ ngồi lại, trực tiếp lắng nghe nông dân, hợp tác xã, doanh nghiệp nêu kiến nghị và giải đáp tại chỗ — được ghi lại qua loạt bài tư liệu trên Báo Điện tử Dân Việt."
+    "desc": "Hành trình bảy lần tổ chức Hội nghị, nơi người đứng đầu Chính phủ ngồi lại, trực tiếp lắng nghe nông dân, hợp tác xã, doanh nghiệp nêu kiến nghị và giải đáp tại chỗ — được ghi lại qua loạt bài tư liệu trên Báo Điện tử Dân Việt."
 };
 
 window.EVENTS = [
@@ -15,7 +15,7 @@ window.EVENTS = [
     "id": "3036",
     "ordinal": "Lần thứ 7",
     "pm": "Thủ tướng Phạm Minh Chính",
-    "date": "10/12/2025",
+    "date": "Tháng 12/2025",
     "location": "Hà Nội",
     "theme": "Ứng dụng khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số trong nông dân",
     "title": "Hội nghị Thủ tướng Chính phủ đối thoại với nông dân năm 2025",
@@ -23,14 +23,9 @@ window.EVENTS = [
     "summary": "Hội nghị diễn ra tại Hà Nội với chủ đề “Ứng dụng khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số trong nông dân”. Trước hội nghị, hơn 5.000 ý kiến của nông dân đã được gửi về qua Báo Điện tử Dân Việt.",
     "stats": [
       {
-        "value": 53,
-        "suffix": "",
-        "label": "Bài báo tư liệu"
-      },
-      {
-        "value": 5000,
+        "value": 100,
         "suffix": "+",
-        "label": "Ý kiến nông dân gửi về"
+        "label": "Bài báo tư liệu"
       }
     ],
     "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nam-2025-channel3036/",
@@ -476,8 +471,8 @@ window.EVENTS = [
     "summary": "Sau hội nghị, Thủ tướng có văn bản truyền đạt ý kiến chỉ đạo, giao các Bộ, ngành và địa phương triển khai giải pháp hỗ trợ nông dân; Dân Việt theo sát việc thực hiện các kết luận này trong năm 2025.",
     "stats": [
       {
-        "value": 65,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],
@@ -1012,7 +1007,7 @@ window.EVENTS = [
     "id": "2912",
     "ordinal": "Lần thứ 5",
     "pm": "Thủ tướng Phạm Minh Chính",
-    "date": "30/12/2023",
+    "date": "Tháng 12/2023",
     "location": "Hà Nội",
     "theme": "",
     "title": "Hội nghị Thủ tướng đối thoại với Nông dân Việt Nam năm 2023",
@@ -1020,8 +1015,8 @@ window.EVENTS = [
     "summary": "Cuối năm 2023, Thủ tướng Chính phủ trực tiếp đối thoại với đại diện nông dân cả nước. Các bài “nhìn lại” tổng hợp những vấn đề nông dân đặt ra và cam kết giải quyết của Chính phủ.",
     "stats": [
       {
-        "value": 11,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],
@@ -1124,7 +1119,7 @@ window.EVENTS = [
     "id": "2697",
     "ordinal": "Lần thứ 4",
     "pm": "Thủ tướng Phạm Minh Chính",
-    "date": "29/5/2022",
+    "date": "Tháng 5/2022",
     "location": "Sơn La",
     "theme": "",
     "title": "Hội nghị Thủ tướng đối thoại với nông dân năm 2022",
@@ -1132,14 +1127,9 @@ window.EVENTS = [
     "summary": "Hội nghị đầu tiên do Thủ tướng Phạm Minh Chính chủ trì, tổ chức tại Sơn La trong bối cảnh dịch Covid-19 được kiểm soát và cả nước bước vào giai đoạn phục hồi, phát triển kinh tế. Khoảng 300 nông dân tiêu biểu trực tiếp đối thoại.",
     "stats": [
       {
-        "value": 59,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
-      },
-      {
-        "value": 300,
-        "suffix": "",
-        "label": "Nông dân tiêu biểu dự đối thoại"
       }
     ],
     "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nam-2022-channel2697/",
@@ -1625,7 +1615,7 @@ window.EVENTS = [
     "id": "2258",
     "ordinal": "Lần thứ 3",
     "pm": "Thủ tướng Nguyễn Xuân Phúc",
-    "date": "28/9/2020",
+    "date": "Tháng 9/2020",
     "location": "TP Buôn Ma Thuột, Đắk Lắk",
     "theme": "",
     "title": "Hội nghị Thủ tướng đối thoại với nông dân năm 2020",
@@ -1633,8 +1623,8 @@ window.EVENTS = [
     "summary": "Lần thứ ba Thủ tướng trực tiếp đối thoại với nông dân, tổ chức tại Buôn Ma Thuột (Đắk Lắk) trong bối cảnh cả nước vừa chống dịch Covid-19 vừa duy trì sản xuất nông nghiệp.",
     "stats": [
       {
-        "value": 31,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],
@@ -1905,14 +1895,9 @@ window.EVENTS = [
     "summary": "Hội nghị lần thứ hai, tổ chức tại Cần Thơ với khoảng 600 đại biểu là nông dân và đại diện các Bộ, ngành, địa phương, nơi nông dân nói thẳng những khó khăn của nông nghiệp, nông thôn với người đứng đầu Chính phủ.",
     "stats": [
       {
-        "value": 18,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
-      },
-      {
-        "value": 600,
-        "suffix": "",
-        "label": "Đại biểu dự Hội nghị"
       }
     ],
     "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-2019-channel2051/",
@@ -2064,5 +2049,270 @@ window.EVENTS = [
       }
     ],
     "articleCount": 18
+  },
+  {
+    "year": 2018,
+    "id": "1378",
+    "onlyYear": 2018,
+    "ordinal": "Lần thứ 1",
+    "pm": "Thủ tướng Nguyễn Xuân Phúc",
+    "date": "Tháng 4/2018",
+    "location": "Hải Dương",
+    "theme": "Tháo gỡ vướng mắc; Khơi dòng động lực; Tiếp đà 30 năm Đổi mới",
+    "title": "Hội nghị Thủ tướng Chính phủ đối thoại với nông dân năm 2018",
+    "cover": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-11/152342361395250-thumbnail.jpg",
+    "summary": "Lần đầu tiên trong lịch sử, Thủ tướng Chính phủ trực tiếp đối thoại với nông dân Việt Nam. Hội nghị do Trung ương Hội Nông dân Việt Nam phối hợp với Văn phòng Chính phủ và UBND tỉnh Hải Dương tổ chức, với 600 đại biểu gồm nông dân và lãnh đạo các Bộ, ngành.",
+    "stats": [
+      {
+        "value": 100,
+        "suffix": "+",
+        "label": "Bài báo tư liệu"
+      }
+    ],
+    "link": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-channel1378/",
+    "api": "",
+    "articles": [
+      {
+        "id": "609632",
+        "title": "Các Bộ trưởng sẽ hành động gì sau Thủ tướng đối thoại với nông dân",
+        "url": "https://danviet.vn/cac-bo-truong-se-hanh-dong-gi-sau-thu-tuong-doi-thoai-voi-nong-dan-7777865346-d609632.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-11/152342361395250-thumbnail.jpg",
+        "sapo": "Ngày 9.4, Thủ tướng Chính phủ Nguyễn Xuân Phúc đã chủ trì buổi đối thoại với nông dân Việt Nam. Tham dự buổi đối thoại còn có các thành viên Chính phủ. Tại buổi đối thoại này, các Bộ trưởng cho biết sẽ có những hành động cụ thể để giải quyết những khó khăn, bức xúc của nông dân.",
+        "date": "2018-04-11"
+      },
+      {
+        "id": "609220",
+        "title": "Thủ tướng đối thoại với nông dân: \"Chúng tôi đã thấy rất rõ vấn đề\"",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-chung-toi-da-thay-rat-ro-van-de-7777864905-d609220.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-10/152332187173285-thumbnail.jpg",
+        "sapo": "“Chính phủ, Thủ tướng Chính phủ sẽ tiếp tục quan tâm sâu sắc hơn nữa đến nông nghiệp, nông thôn, nông dân”, Thủ tướng Nguyễn Xuân Phúc nhấn mạnh khi phát biểu kết luận tại buổi Thủ tướng Chính phủ đối thoại với nông dân Việt Nam diễn ra vào ngày hôm qua 9.4 tại Hải Dương.",
+        "date": "2018-04-10"
+      },
+      {
+        "id": "609013",
+        "title": "Tuần sau, ngân hàng sẽ trả lời dứt điểm với một số ND về vốn vay",
+        "url": "https://danviet.vn/tuan-sau-ngan-hang-se-tra-loi-dut-diem-voi-mot-so-nd-ve-von-vay-7777864681-d609013.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152324965533451-thumbnail.jpg",
+        "sapo": "Tại hội nghị Thủ tướng Chính phủ đối thoại với nông dân Việt Nam do Trung ương Hội Nông dân Việt Nam, phối hợp UBND tỉnh Hải Dương tổ chức vào sáng 9/4, rất nhiều nông dân (ND) đã chia sẻ rằng: ND chúng tôi không thiếu sự chăm chỉ, nhưng rất bí bách về vốn. Mặc dù đã có nhiều gói cho vay ưu đãi lĩnh vực tam nông, nhưng đáng buồn là đến nay không có nhiều ND tiếp cận được, hoặc chỉ vay được rất ít.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609160",
+        "title": "Toàn cảnh: Thủ tướng đối thoại với nông dân Việt Nam",
+        "url": "https://danviet.vn/toan-canh-thu-tuong-doi-thoai-voi-nong-dan-viet-nam-7777864838-d609160.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152327791891973-thumbnail.jpg",
+        "sapo": "Sáng 9.4, tại tỉnh Hải Dương, lần đầu tiên Thủ tướng Chính phủ đối thoại với nông dân Việt Nam.Đây là dịp để nông dân đề xuất, kiến nghị trực tiếp với người đứng đầu Chính phủ tháo gỡ những khó khăn, vướng mắc nhằm phát triển nhanh, bền vững lĩnh vực nông nghiệp, nông dân, nông thôn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609149",
+        "title": "CLIP: Thủ tướng đi thăm, đối thoại, tháo gỡ khó khăn cho nông dân",
+        "url": "https://danviet.vn/clip-thu-tuong-di-tham-doi-thoai-thao-go-kho-khan-cho-nong-dan-7777864825-d609149.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152327842814809-thumbnail.jpg",
+        "sapo": "Sáng nay 9.4, tại tỉnh Hải Dương, lần đầu tiên Thủ tướng Chính phủ đối thoại với nông dân Việt Nam. Đây là dịp để nông dân đề xuất, kiến nghị trực tiếp với người đứng đầu Chính phủ tháo gỡ những khó khăn, vướng mắc nhằm phát triển nhanh, bền vững lĩnh vực nông nghiệp, nông dân, nông thôn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609148",
+        "title": "Thủ tướng kêu gọi “6 nhà” tham gia sản xuất, tiêu thụ nông sản",
+        "url": "https://danviet.vn/thu-tuong-keu-goi-6-nha-tham-gia-san-xuat-tieu-thu-nong-san-7777864824-d609148.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/15232721829774-thumbnail.jpg",
+        "sapo": "Lần đầu tiên, Thủ tướng Chính phủ trực tiếp đối thoại với nông dân Việt Nam nhằm giải đáp kịp thời những khó khăn, vướng mắc của người dân trong quá trình sản xuất. Tại cuộc đối thoại, Thủ tướng kêu gọi sự tham gia của “6 nhà” để nâng cao năng lực cạnh tranh, đẩy mạnh xuất khẩu cho nông sản Việt.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609143",
+        "title": "Cuộc đối thoại lịch sử chưa bao giờ có giữa Thủ tướng với nông dân",
+        "url": "https://danviet.vn/cuoc-doi-thoai-lich-su-chua-bao-gio-co-giua-thu-tuong-voi-nong-dan-7777864819-d609143.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152327015314366-thumbnail.jpg",
+        "sapo": "\"Chưa bao giờ có một cuộc đối thoại giữa Thủ tướng, các lãnh đạo Bộ, ngành trực tiếp với những người sản xuất như hôm nay. Nông nghiệp Việt Nam trong những năm qua đã đạt được nhiều thành tựu, phải cảm ơn chính những người nông dân đang ngày đêm trực tiếp sản xuất để đưa đất nước từ từ một nước thiếu ăn sang đủ ăn. Thậm chí, không chỉ đủ ăn mà còn xuất khẩu nông lâm thuỷ sản đạt trên 30 tỷ USD\".",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609138",
+        "title": "Thủ tướng Nguyễn Xuân Phúc: Điều tra, xử lý nghiêm vụ Thuận Phong",
+        "url": "https://danviet.vn/thu-tuong-nguyen-xuan-phuc-dieu-tra-xu-ly-nghiem-vu-thuan-phong-7777864814-d609138.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152327086085581-thumbnail.jpg",
+        "sapo": "Tại Hội nghị Thủ tướng Đối thoại với nông dân Việt Nam diễn ra sáng nay tại Hải Dương, trả lời câu hỏi của các nông dân, Thủ tướng Nguyễn Xuân Phúc cho biết giao điều tra xử lý nghiêm vụ phân bón Thuận Phong.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609093",
+        "title": "Bà Trương Thị Mai: Về quê khởi nghiệp không phải là thất bại!",
+        "url": "https://danviet.vn/ba-truong-thi-mai-ve-que-khoi-nghiep-khong-phai-la-that-bai-7777864768-d609093.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152326538098896-thumbnail.jpg",
+        "sapo": "Giải đáp những thắc mắc của về vấn đề tri thức trẻ ở nông thôn cũng như việc hưởng lương hưu của nông dân, bà Trương Thị Mai nhấn mạnh: “Về quê khởi nghiệp không phải là thất bại hay thiệt thòi” và “Cần thiết phải có quỹ lương hưu dành cho nông dân để họ có thể sống tốt khi về già”.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609035",
+        "title": "Phó Thủ tướng Vũ Đức Đam: Xây dựng Hệ trí thức Việt số hoá kết nối ND",
+        "url": "https://danviet.vn/pho-thu-tuong-vu-duc-dam-xay-dung-he-tri-thuc-viet-so-hoa-ket-noi-nd-7777864703-d609035.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/15232558521633-thumbnail.jpg",
+        "sapo": "Tại cuộc đối thoại, Phó Thủ tướng Vũ Đức Đam cho hay, thời gian tới, Chính phủ có chủ trương xây dựng Hệ trí thức Việt số hóa. Theo đó, tất cả những cách thức làm ăn hiệu quả sẽ được đưa lên đây, tất cả nông dân sẽ được kết nối với nhau thông qua hệ thống này. Đây sẽ là lối đi cho các hộ nông dân riêng lẻ.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609018",
+        "title": "Thủ tướng kết luận tại hội nghị Đối thoại với nông dân",
+        "url": "https://danviet.vn/thu-tuong-ket-luan-tai-hoi-nghi-doi-thoai-voi-nong-dan-7777864686-d609018.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152325090745125-thumbnail.jpg",
+        "sapo": "Trong buổi sáng nay (9.4), với chủ đề “Tháo gỡ vướng mắc; Khơi dòng động lực; Tiếp đà 30 năm Đổi mới”, Thủ tướng Nguyễn Xuân Phúc tôi và các đồng chí lãnh đạo các Bộ, ngành đã cùng trao đổi thắng thắn, cởi mở với bà con nông dân về rất nhiều nội dung, trong đó những vấn đề lớn, tầm chiến lược liên quan đến phát triển nông nghiệp, nông thôn và đời sống người dân nông thôn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "609015",
+        "title": "Bộ trưởng Bộ Công Thương: Trung Quốc-thị trường lớn của nông sản VN",
+        "url": "https://danviet.vn/bo-truong-bo-cong-thuong-trung-quocthi-truong-lon-cua-nong-san-vn-7777864683-d609015.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152325028657821-thumbnail.jpg",
+        "sapo": "Bộ trưởng Bộ Công Thương Trần Tuấn Anh cho rằng, để nông sản Việt không bị lệ thuộc vào thị trường Trung Quốc, cách duy nhất là chúng ta phải tích cực tìm kiếm, khai thác nhiều thị trường mới. Và chỉ khi nào chúng ta có được sự cạnh tranh về giá của sản phẩm, cũng như đáp ứng đầy đủ tiêu chuẩn về chất lượng sản phẩm, kể cả vệ sinh an toàn thực phẩm thì lúc đó chúng ta sẽ không phụ thuộc vào bất kỳ thị trường nào.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608985",
+        "title": "CLIP: Thủ tướng trực tiếp trả lời câu hỏi của nông dân Hải Dương",
+        "url": "https://danviet.vn/clip-thu-tuong-truc-tiep-tra-loi-cau-hoi-cua-nong-dan-hai-duong-7777864650-d608985.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152324445163452-thumbnail.jpg",
+        "sapo": "Trao đổi tại Hội nghị đối thoại giữa Thủ tướng với nông dân diễn ra sáng nay (9.4) tại Hải Dương, Thủ tướng Chính phủ Nguyễn Xuân Phúc khẳng định: Từ nông thôn tới đồng bằng, miền núi tới miền xuôi sản xuất nông nghiệp đã có sự tăng trưởng mạnh mẽ, nhiều loại nông sản xuất khẩu có giá trị cao. Nhưng ở đâu đó, vào thời điểm nào đó, vẫn xuất hiện tình trạng được mùa mất giá nông sản và chúng ta phải tìm cách khắc phục.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608952",
+        "title": "Ảnh: Thủ tướng thăm gia đình chính sách và nông dân giỏi Hải Dương",
+        "url": "https://danviet.vn/anh-thu-tuong-tham-gia-dinh-chinh-sach-va-nong-dan-gioi-hai-duong-7777864616-d608952.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152324231033673-thumbnail.jpg",
+        "sapo": "Sáng 9.4, trước khi tham dự Hội nghị đối thoại với nông dân có chủ đề “Tháo gỡ vướng mắc, khơi dòng động lực, tiếp đà 30 năm đổi mới”, Thủ tướng Nguyễn Xuân Phúc đã đi thăm, trao quà động viên gia đình chính sách và thăm cơ sở sơ chế, đóng gói bảo quản rau củ quả của nông dân giỏi Tăng Xuân Trường, một mô hình sản xuất kinh doanh tiêu biểu của tỉnh Hải Dương.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608938",
+        "title": "Bài phát biểu của Chủ tịch TƯ Hội NDVN: Kiến nghị 7 vấn đề \"nóng\"",
+        "url": "https://danviet.vn/bai-phat-bieu-cua-chu-tich-tu-hoi-ndvn-kien-nghi-7-van-de-nong-7777864602-d608938.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152323869324476-thumbnail.jpg",
+        "sapo": "Sáng nay (9/4), tại Khách sạn Nam Cường (TP.Hải Dương) đã diễn ra hội nghị Thủ tướng Chính phủ đối thoại với nông dân, với chủ đề \"Tháo gỡ vướng mắc, khơi dòng động lực, tiếp đà 30 năm đổi mới\". Khai mạc Hội nghị, đồng chí Thào Xuân Sùng, Uỷ viên BCH Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch BCH Trung ương Hội NDVN đã có bài phát biểu chỉ ra 7 vấn đề còn vướng mắc, cũng như kiến nghị 7 vấn đề căn cơ nhất có liên quan đến nông nghiệp, nông dân và nông thôn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608900",
+        "title": "Thủ tướng đối thoại với nông dân: Nông dân cần gì nhất ở Chính phủ?",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nong-dan-can-gi-nhat-o-chinh-phu-7777864561-d608900.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152320834195833-thumbnail.jpg",
+        "sapo": "Hôm nay 9.4, tại tỉnh Hải Dương, lần đầu tiên, Trung ương Hội Nông dân Việt Nam chủ trì, phối hợp với Văn phòng Chính phủ, UBND tỉnh Hải Dương chỉ đạo, tổ chức Hội nghị “Thủ tướng Chính phủ đối thoại với nông dân Việt Nam” và giao Báo Nông thôn Ngày nay là đơn vị trực tiếp thực hiện sự kiện này.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608883",
+        "title": "Thủ tướng đối thoại với nông dân: Giải quyết ngay bức xúc của ND",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-giai-quyet-ngay-buc-xuc-cua-nd-7777864543-d608883.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-09/152324919165194-thumbnail.jpg",
+        "sapo": "Sáng nay 9.4, tại tỉnh Hải Dương, lần đầu tiên Thủ tướng Chính phủ đối thoại với nông dân Việt Nam. Đây là dịp để nông dân đề xuất, kiến nghị trực tiếp với người đứng đầu Chính phủ tháo gỡ những khó khăn, vướng mắc nhằm phát triển nhanh, bền vững lĩnh vực nông nghiệp, nông dân, nông thôn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608799",
+        "title": "Sáng nay 9.4, 600 đại biểu dự buổi Thủ tướng đối thoại với nông dân",
+        "url": "https://danviet.vn/sang-nay-94-600-dai-bieu-du-buoi-thu-tuong-doi-thoai-voi-nong-dan-7777864455-d608799.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-08/152317376931936-thumbnail.jpg",
+        "sapo": "Sáng hôm nay, ngày 9.4 tại tỉnh Hải Dương diễn ra cuộc đối thoại của Thủ tướng với nông dân. Đây là lần đầu tiên người đứng đầu Chính phủ tổ chức đối thoại với nông dân.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608794",
+        "title": "CLIP: Đối thoại với Thủ tướng - cơ hội và kỳ vọng của nông dân",
+        "url": "https://danviet.vn/clip-doi-thoai-voi-thu-tuong-co-hoi-va-ky-vong-cua-nong-dan-7777864450-d608794.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-08/152317136654540-thumbnail.jpg",
+        "sapo": "Lần đầu tiên sau rất nhiều năm, một cuộc đối thoại giữa Thủ tướng Chính phủ với nông dân Việt Nam được tổ chức, là nơi để hơn 500 nông dân có dịp trực tiếp bày tỏ tâm tư nguyện vọng. Để rồi, dựa trên chính những đề xuất thiết thực đó, người đứng đầu Chính phủ và các bộ ban ngành có thể đưa ra những quyết sách để thúc đẩy nông nghiệp phát triển cũng như giúp đời sống người nông dân ngày càng tốt hơn.",
+        "date": "2018-04-09"
+      },
+      {
+        "id": "608508",
+        "title": "Tôi sẽ nói thật với Thủ tướng về khó khăn của người nuôi lợn",
+        "url": "https://danviet.vn/toi-se-noi-that-voi-thu-tuong-ve-kho-khan-cua-nguoi-nuoi-lon-7777864154-d608508.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-06/152303318168576-thumbnail.jpg",
+        "sapo": "Từng được mệnh danh là \"vua lợn organic\", ông Tô Hiến Thành - Chủ tịch HĐQT kiêm Tổng Giám đốc HTX Trường Thành  ở xã Danh Thắng, huyện Hiệp Hòa (Bắc Giang) đang rất kỳ vọng tại buổi Thủ tướng đối thoại với nông dân diễn ra vào ngày 9.4 tại Hải Dương.",
+        "date": "2018-04-08"
+      },
+      {
+        "id": "608461",
+        "title": "Thủ tướng đối thoại với nông dân: Hành động để tăng thu nhập của ND",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-hanh-dong-de-tang-thu-nhap-cua-nd-7777864101-d608461.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-06/152301861581319-thumbnail.jpg",
+        "sapo": "\"Chỉ riêng trong năm 2017, Thủ tướng Chính phủ Nguyễn Xuân Phúc đã dự 17 hội nghị, diễn đàn về các vấn đề liên quan đến ngành nông nghiệp\".",
+        "date": "2018-04-08"
+      },
+      {
+        "id": "608866",
+        "title": "Ngày 9.4, Thủ tướng đối thoại với nông dân: Mong ước đã lâu",
+        "url": "https://danviet.vn/ngay-94-thu-tuong-doi-thoai-voi-nong-dan-mong-uoc-da-lau-7777864525-d608866.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-08/152318893179645-thumbnail.jpg",
+        "sapo": "Xác định rằng, những khó khăn của nông dân, vướng mắc trong phát triển nông nghiệp, xây dựng nông thôn mới hiện nay, Thủ tướng và Chính phủ không thể giải quyết ngay, và không phải khó khăn nào cũng đưa lên Thủ tướng. Nhưng nhiều cán bộ, hội viên, nông dân tin tưởng rằng cuộc đối thoại lần đầu tiên được tổ chức giữa Thủ tướng với nông dân sẽ không thất vọng bởi qua sự kiện này để làm tăng thêm sự chú ý của toàn xã hội, tăng thêm sự quan tâm của Đảng, Nhà nước đối với nông nghiệp, nông dân, nông",
+        "date": "2018-04-08"
+      },
+      {
+        "id": "608789",
+        "title": "Thủ tướng đối thoại với nông dân: Nông dân cần gì nhất ở Chính phủ?",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nong-dan-can-gi-nhat-o-chinh-phu-7777864445-d608789.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-08/152316988236196-thumbnail.jpg",
+        "sapo": "“Nếu hỏi nông dân rằng bây giờ họ cần gì ở Chính phủ nhất, chắc chắn nông dân sẽ nói: cần nhất là thị trường, cần hỗ trợ bán hàng và tôi nghĩ chúng ta nên tập trung làm tốt việc này”.",
+        "date": "2018-04-08"
+      },
+      {
+        "id": "608459",
+        "title": "Thủ tướng đối thoại với nông dân: Hành động, kiến tạo với tam nông",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-hanh-dong-kien-tao-voi-tam-nong-7777864099-d608459.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-06/152301839973480-thumbnail.jpg",
+        "sapo": "“Xây dựng Chính phủ hành động, kiến tạo, liêm chính, phục vụ phát triển và phục vụ nhân dân…”, đó là thông điệp mạnh mẽ của Thủ tướng Chính phủ Nguyễn Xuân Phúc đưa ra trong phiên họp thường kỳ của Chính phủ thảo luận về vấn đề hoàn thiện thể chế trước khi thảo luận các vấn đề kinh tế - xã hội diễn ra trong hai ngày 1-2.6.2016. Tinh thần này được người đứng đầu Chính phủ nêu lên trong các cuộc đối thoại, trao đổi, gặp mặt giới trí thức, công nhân và sắp tới là nông dân (ND)…",
+        "date": "2018-04-07"
+      },
+      {
+        "id": "608460",
+        "title": "Chủ tịch Hội NDVN: 2 nhóm vấn đề, 5 giải pháp cần Thủ tướng tháo gỡ",
+        "url": "https://danviet.vn/chu-tich-hoi-ndvn-2-nhom-van-de-5-giai-phap-can-thu-tuong-thao-go-7777864100-d608460.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-06/152301850272974-thumbnail.jpg",
+        "sapo": "Ngày 9.4 tới, Trung ương Hội Nông dân Việt Nam (T.Ư Hội NDVN) chủ trì, phối hợp với Văn phòng Chính phủ, UBND tỉnh Hải Dương chỉ đạo, tổ chức Hội nghị Thủ tướng đối thoại với ND, chủ đề “Tháo gỡ khó khăn, Khơi dòng động lực, Tiếp đà 30 năm đổi mới”. Báo NTNN đã phỏng vấn đồng chí Thào Xuân Sùng - Ủy viên T.Ư Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành T.Ư NDVN.",
+        "date": "2018-04-07"
+      },
+      {
+        "id": "608109",
+        "title": "Thủ tướng đối thoại với nông dân: 4 vấn đề nóng cần giải quyết",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-4-van-de-nong-can-giai-quyet-7777863721-d608109.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-05/152292958489202-thumbnail.jpg",
+        "sapo": "Là người có nhiều nghiên cứu cũng như tham gia quản lý lâu năm trong ngành nông nghiệp, TS Đặng Kim Sơn - nguyên Viện trưởng Viện Chính sách và Chiến lược phát triển nông nghiệp nông thôn hiểu rất rõ những “được – mất” của ngành này. Nhân sự kiện Thủ tướng đối thoại với nông dân sắp diễn ra (ngày 9.4), phóng viên NTNN đã có cuộc trò chuyện với ông Sơn về vấn đề này.",
+        "date": "2018-04-06"
+      },
+      {
+        "id": "608147",
+        "title": "Thủ tướng đối thoại với nông dân: Nhiều câu hỏi về nạn phân bón giả",
+        "url": "https://danviet.vn/thu-tuong-doi-thoai-voi-nong-dan-nhieu-cau-hoi-ve-nan-phan-bon-gia-7777863761-d608147.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-05/152294089985191-thumbnail.jpg",
+        "sapo": "Theo Ban Tổ chức hội nghị Thủ tướng đối thoại với nông dân (sẽ diễn ra ngày 9.4 tại tỉnh Hải Dương), đến thời điểm này đã có khoảng 1.000 câu hỏi được gửi về để Ban Tổ chức tổng hợp, chuẩn bị để nông dân trao đổi với Thủ tướng, trong đó nhiều hơn cả là nhóm câu hỏi về quản lý chất lượng vật tư nông nghiệp, cụ thể là tình trạng sản xuất- kinh doanh phân bón giả.",
+        "date": "2018-04-06"
+      },
+      {
+        "id": "607770",
+        "title": "Hội nghị Thủ tướng đối thoại với nông dân: Phấn khởi và kỳ vọng",
+        "url": "https://danviet.vn/hoi-nghi-thu-tuong-doi-thoai-voi-nong-dan-phan-khoi-va-ky-vong-7777863361-d607770.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-05/152289368111115-thumbnail.jpg",
+        "sapo": "Trao đổi với Báo Nông Thôn Ngày Nay/Dân Việt, nhiều đại biểu nông dân Việt Nam xuất sắc bày tỏ phấn khởi và mong chờ được tham dự hội nghị đối thoại giữa Thủ tướng với nông dân.",
+        "date": "2018-04-05"
+      },
+      {
+        "id": "607462",
+        "title": "Ngày 9.4, lần đầu tiên Thủ tướng đối thoại với nông dân",
+        "url": "https://danviet.vn/ngay-94-lan-dau-tien-thu-tuong-doi-thoai-voi-nong-dan-7777863036-d607462.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-03/152275623664739-thumbnail.jpg",
+        "sapo": "Lần đầu tiên, Thủ tướng Chính phủ sẽ có cuộc đối thoại với nông dân. Cuộc đối thoại dự kiến diễn ra vào ngày 9.4 tại tỉnh Hải Dương. “Đây là dịp để nông dân đề xuất, kiến nghị trực tiếp với người đứng đầu Chính phủ tháo gỡ những khó khăn, vướng mắc nhằm phát triển nhanh, bền vững lĩnh vực nông nghiệp, nông dân, nông thôn” - nhà báo Lưu Quang Định, Tổng Biên tập Báo NTNN/Dân Việt, Phó Ban tổ chức cuộc đối thoại khẳng định.",
+        "date": "2018-04-04"
+      },
+      {
+        "id": "607646",
+        "title": "Sẽ có 600 đại biểu dự buổi Thủ tướng đối thoại với nông dân",
+        "url": "https://danviet.vn/se-co-600-dai-bieu-du-buoi-thu-tuong-doi-thoai-voi-nong-dan-7777863228-d607646.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/upload/2-2018/images/2018-04-04/152282336231605-thumbnail.jpg",
+        "sapo": "Theo thông tin từ Ban Tổ chức hội nghị Thủ tướng đối thoại với nông dân, ngày 9.4 tới hội nghị sẽ diễn ra tại tỉnh Hải Dương với 600 đại biểu tham dự, gồm: nông dân, lãnh đạo các Bộ, ban, ngành của Trung ương, các cơ quan ban, ngành tỉnh Hải Dương; lãnh đạo 63 hội nông dân tỉnh, thành; các chuyên gia, nhà khoa học; đại diện các doanh nghiệp; phóng viên các cơ quan thông tấn, báo chí.",
+        "date": "2018-04-04"
+      }
+    ],
+    "articleCount": 30
   }
 ];

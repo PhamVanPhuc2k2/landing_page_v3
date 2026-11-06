@@ -90,6 +90,9 @@ def main():
         if refresh and cid:
             try:
                 channel, fresh = fetch_channel(cid)
+                if meta.get("onlyYear"):  # chủ đề CMS gộp nhiều năm -> chỉ giữ bài đúng năm
+                    fresh = [x for x in fresh if x["date"].startswith(str(meta["onlyYear"]))]
+                    fresh.sort(key=lambda x: x["date"], reverse=True)
                 if fresh:
                     articles = fresh
                 channel_link = channel.get("link") or channel_link
@@ -97,7 +100,7 @@ def main():
                 print(f"[{meta['year']}/{cid}] ! không gọi được API ({e}) -> giữ {len(articles)} bài dự phòng")
 
         ev = dict(meta)
-        ev["api"] = api_url(cid) if cid else ""
+        ev["api"] = api_url(cid) if cid and not meta.get("onlyYear") else ""  # onlyYear: dùng danh sách tĩnh đã lọc
         ev["articles"] = articles
         ev["articleCount"] = len(articles)
         if not ev.get("link"):

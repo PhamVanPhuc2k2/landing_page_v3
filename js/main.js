@@ -48,15 +48,17 @@
         }).join("");
     }
 
-    function thumb(img) {
-        return img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : '<span class="post__ph">Dân Việt</span>';
+    function thumb(img, date) {
+        var year = (date || "").slice(0, 4);
+        return (img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : '<span class="post__ph">Dân Việt</span>') +
+            (year ? '<span class="post__year">' + year + '</span>' : '');
     }
 
     function renderPost(a, lead, i) {
         var date = fmtDate(a.date);
         if (lead) {
             return '<a class="post post--lead" data-reveal="zoom" style="--d:' + (i * 0.07) + 's" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
-                '<div class="post__thumb">' + thumb(a.img) + '</div>' +
+                '<div class="post__thumb">' + thumb(a.img, a.date) + '</div>' +
                 '<div class="post__body">' +
                     '<h4 class="post__title">' + esc(a.title) + '</h4>' +
                     (a.sapo ? '<p class="post__sapo">' + esc(a.sapo) + '</p>' : '') +
@@ -65,7 +67,7 @@
                 '</div></a>';
         }
         return '<a class="post" data-reveal="' + (i % 2 ? "right" : "left") + '" style="--d:' + (i * 0.07) + 's" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
-            '<div class="post__thumb">' + thumb(a.img) + '</div>' +
+            '<div class="post__thumb">' + thumb(a.img, a.date) + '</div>' +
             '<div class="post__body">' +
                 '<h4 class="post__title">' + esc(a.title) + '</h4>' +
                 (date ? '<span class="post__date">' + date + '</span>' : '') +
@@ -94,7 +96,7 @@
                     '<h3 class="info__title">' + esc(ev.title) + '</h3>' +
                     (ev.theme ? '<p class="info__theme"><small>Chủ đề Hội nghị</small>“' + esc(ev.theme) + '”</p>' : '') +
                     '<p class="info__summary">' + esc(ev.summary) + '</p>' +
-                    (ev.link ? '<a class="btn btn--outline info__link" href="' + esc(ev.link) + '" target="_blank" rel="noopener">Xem chuyên trang trên Dân Việt ↗</a>' : '') +
+                    (ev.link ? '<a class="btn btn--outline info__link" href="' + esc(ev.link) + '" target="_blank" rel="noopener">Xem thêm trên Dân Việt ↗</a>' : '') +
                 '</div>' +
                 '<aside class="facts-card" data-reveal="right" style="--d:.15s">' +
                     '<dl>' + facts.map(function (r) { return '<div><dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd></div>'; }).join("") + '</dl>' +
@@ -102,7 +104,7 @@
                 '</aside>' +
             '</div>' +
             '<div class="press">' +
-                '<div class="press__head" data-reveal><h3>Bài báo tư liệu</h3><span class="press__count"></span></div>' +
+                '<div class="press__head" data-reveal><h3>Bài báo tư liệu <em>Hội nghị ' + ev.year + '</em></h3><span class="press__count"></span></div>' +
                 '<div class="press__list"></div>' +
                 '<div class="press__more" data-reveal><button class="btn btn--outline" type="button">Xem thêm bài</button></div>' +
             '</div>';
@@ -153,7 +155,7 @@
             return liveReady && live.total && !exhausted ? Math.max(live.total, items.length) : items.length;
         }
         function refreshUi() {
-            countEl.textContent = total() ? fmt(total()) + " bài" : "";
+            countEl.textContent = ""; // không hiển thị số tin bài
             moreBtn.parentNode.style.display = shown < total() ? "" : "none";
             moreBtn.disabled = false;
             moreBtn.textContent = "Xem thêm bài";
