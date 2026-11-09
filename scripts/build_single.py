@@ -10,6 +10,7 @@ Giữ nguyên link ngoài: font Google, ảnh bài viết (CDN Dân Việt), API
 Chạy lại script này mỗi khi sửa giao diện (SCSS -> css/style.css) hoặc nội dung (js/data.js).
 """
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -39,8 +40,18 @@ def inline_js(match):
 
 def main():
     html = SRC.read_text(encoding="utf-8")
+    # Đổi ghi chú đầu file: bản này chỉ là bản gộp tự tạo
+    html = re.sub(r"<!-- ★ FILE CHÍNH[^>]*-->\n", "<!-- BẢN GỘP 1 FILE — TỰ ĐỘNG TẠO bởi scripts/build_single.py từ index.html. KHÔNG sửa tay; file chính là index.html. -->\n", html)
     html, n_css = re.subn(r'<link rel="stylesheet" href="(\./[^"]+)"\s*/?>', inline_css, html)
     html, n_js = re.subn(r'<script src="(\./[^"]+)"></script>', inline_js, html)
+    # Script `defer` trong <head>: bản 1 file nhúng ở cuối <body> (script nhúng không có defer)
+    deferred = []
+    def take_deferred(m):
+        deferred.append(inline_js(m))
+        return ""
+    html = re.sub(r'<script src="(\./[^"]+)" defer></script>\s*', take_deferred, html)
+    n_js += len(deferred)
+    html = html.replace("</body>", "".join(deferred) + "</body>")
     # Comment ghi chú về ?v= không còn ý nghĩa trong bản 1 file
     html = re.sub(r"\s*<!-- \?v=\.\.\.:[^>]*-->", "", html)
 
@@ -49,6 +60,9 @@ def main():
         sys.exit(f"Còn tham chiếu file cục bộ chưa nhúng: {leftovers}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    # Ảnh cục bộ (./images/...) đi kèm bản gộp để đường dẫn tương đối vẫn đúng
+    if (ROOT / "images").is_dir():
+        shutil.copytree(ROOT / "images", OUT.parent / "images", dirs_exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     print(f"Đã nhúng {n_css} file CSS, {n_js} file JS -> {OUT.relative_to(ROOT)} ({OUT.stat().st_size / 1024:.0f} KB)")
 

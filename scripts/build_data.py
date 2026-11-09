@@ -10,7 +10,7 @@ Mỗi hội nghị (`events`) ứng với 1 chủ đề (channel) trên CMS Dân
     python3 scripts/build_data.py            # sau khi sửa data/events.json
     python3 scripts/build_data.py --refresh  # lấy lại bài từ API
 
-Biến môi trường OUTPUT_DIR: thư mục web, ghi {OUTPUT_DIR}/js/data.js (mặc định: thư mục dự án).
+Biến môi trường OUTPUT_DIR: ghi {OUTPUT_DIR}/src/js/data.js (mặc định: thư mục dự án).
 Chỉ dùng thư viện chuẩn của Python.
 """
 import json
@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 EVENTS_JSON = ROOT / "data" / "events.json"
-DATA_JS = Path(os.environ.get("OUTPUT_DIR") or ROOT) / "js" / "data.js"
+DATA_JS = Path(os.environ.get("OUTPUT_DIR") or ROOT) / "src" / "js" / "data.js"
 UA = {"User-Agent": "Mozilla/5.0 (landing-page build)"}
 
 
@@ -122,6 +122,8 @@ def main():
            + "window.EVENTS = " + json.dumps(events, ensure_ascii=False, indent=2) + ";\n")
     write_atomic(DATA_JS, out)
     print(f"Đã ghi {DATA_JS}")
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_assets.py")], check=True)  # gộp lại js/main.js
 
 
 if __name__ == "__main__":

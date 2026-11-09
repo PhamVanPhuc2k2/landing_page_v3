@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- BẢN GỘP 1 FILE — TỰ ĐỘNG TẠO bởi scripts/build_single.py từ index.html. KHÔNG sửa tay; file chính là index.html. -->
 <html lang="vi">
     <head>
         <meta charset="UTF-8" />
@@ -13,6 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <style>
 /* css/style.css */
+/* TỰ ĐỘNG TẠO bởi scripts/build_assets.py — sửa trong src/, không sửa tay file này */
+
+/* ===== src/css/01-base.css ===== */
+/* Biến màu, reset, bố cục chung */
 /* =====================================================================
    Thủ tướng đối thoại với nông dân (2019 – 2025)
    Hướng thiết kế: "toà soạn" — giấy có hạt, chữ serif, đường kẻ mảnh, ảnh như ảnh in.
@@ -62,6 +67,8 @@ ul { padding: 0; list-style: none; }
 .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
 :focus-visible { outline: 2px solid var(--magenta); outline-offset: 3px; }
 
+/* ===== src/css/02-intro.css ===== */
+/* Màn mở đầu */
 /* ---------- Màn mở đầu ---------- */
 .intro { display: none; }
 .has-intro .intro { display: block; position: fixed; inset: 0; z-index: 200; pointer-events: none; animation: introHide 0s 2.3s forwards; }
@@ -77,6 +84,8 @@ ul { padding: 0; list-style: none; }
 @keyframes introLabel { 0% { opacity: 0; transform: translateY(16px); } 25%, 70% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-10px); } }
 @keyframes introHide { to { visibility: hidden; } }
 
+/* ===== src/css/03-components.css ===== */
+/* Thanh tiến trình, nút, nhãn, hiệu ứng hiện dần */
 /* ---------- Thanh tiến trình & nút ---------- */
 .progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 120; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, var(--red) 0 60%, var(--gold) 60% 100%); }
 
@@ -112,6 +121,8 @@ ul { padding: 0; list-style: none; }
 .has-intro { --intro: 1.9s; }
 @keyframes heroIn { to { opacity: 1; transform: none; } }
 
+/* ===== src/css/04-header.css ===== */
+/* Thanh trên */
 /* ---------- Thanh trên ---------- */
 .topbar { position: sticky; top: 0; z-index: 60; height: var(--header-h); background: rgba(248, 245, 238, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .topbar__inner { display: flex; align-items: center; justify-content: space-between; height: 100%; gap: 20px; }
@@ -127,6 +138,8 @@ ul { padding: 0; list-style: none; }
 .topbar__nav a:hover::after { transform: scaleX(1); transform-origin: left; }
 .topbar__toggle { display: none; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 2px; background: transparent; font-size: 20px; color: var(--navy-800); }
 
+/* ===== src/css/05-hero.css ===== */
+/* Hero */
 /* ---------- Hero ---------- */
 .hero { position: relative; padding: 76px 0 0; overflow-x: clip; background: linear-gradient(180deg, var(--sky-100) 0%, var(--sky-200) 100%); }
 .hero__hex {
@@ -175,6 +188,8 @@ ul { padding: 0; list-style: none; }
 .stamp i { font-family: var(--serif); font-size: 13px; line-height: 1.1; }
 @keyframes stampIn { from { opacity: 0; transform: rotate(40deg) scale(2.2); } to { opacity: 1; transform: rotate(12deg) scale(1); } }
 
+/* ===== src/css/06-facts-ticker.css ===== */
+/* Dải số liệu và dải chữ chạy */
 /* ---------- Số liệu ---------- */
 .facts { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; border-top: 3px solid var(--navy-900); }
 .facts li { display: flex; align-items: center; gap: 16px; padding: 24px 20px 26px 0; }
@@ -190,6 +205,8 @@ ul { padding: 0; list-style: none; }
 .ticker:hover .ticker__track { animation-play-state: paused; }
 @keyframes ticker { to { transform: translateX(-33.3333%); } }
 
+/* ===== src/css/07-archive.css ===== */
+/* Kho tư liệu: cột năm, chi tiết, bài báo */
 /* ---------- Lưu trữ ---------- */
 .archive { padding: 110px 0 100px; background: var(--paper); }
 .section-head { max-width: 760px; margin-bottom: 56px; }
@@ -276,6 +293,8 @@ ul { padding: 0; list-style: none; }
 
 .press__more { display: flex; justify-content: center; margin-top: 38px; }
 
+/* ===== src/css/08-footer.css ===== */
+/* Chân trang */
 /* ---------- Footer ---------- */
 .footer { background: var(--navy-950); color: rgba(255, 255, 255, .75); padding: 56px 0 48px; font-size: 14px; border-top: 6px solid var(--red); }
 .footer__inner { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
@@ -286,6 +305,8 @@ ul { padding: 0; list-style: none; }
 .to-top.is-visible { opacity: 1; transform: none; pointer-events: auto; }
 .to-top:hover { background: var(--navy-900); color: var(--gold); }
 
+/* ===== src/css/09-responsive.css ===== */
+/* Responsive (tablet/mobile) và giảm chuyển động */
 /* ---------- Responsive ---------- */
 @media (max-width: 1023px) {
     .hero__grid { grid-template-columns: 1fr; gap: 48px; }
@@ -337,6 +358,8 @@ ul { padding: 0; list-style: none; }
     .stamp { transform: rotate(12deg) !important; }
 }
 
+/* ===== src/css/10-theme-soft.css ===== */
+/* Làm mềm: bo góc, bóng nhẹ */
 /* =====================================================================
    LÀM MỀM — bo góc, bóng đổ nhẹ, bỏ viền dày/góc nhọn
    ===================================================================== */
@@ -412,6 +435,8 @@ body::before { opacity: .28; }
     .footer { border-radius: 28px 28px 0 0; }
 }
 
+/* ===== src/css/11-theme-sky.css ===== */
+/* Đồng bộ màu xanh da trời + lục giác */
 /* =====================================================================
    ĐỒNG BỘ MÀU — toàn trang dùng tông xanh da trời + lục giác như hero
    ===================================================================== */
@@ -441,6 +466,8 @@ body::before { display: none; } /* bỏ hạt giấy ấm */
     .facts { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ===== src/css/12-overrides.css ===== */
+/* Nhãn năm trên ảnh, chân trang gọn */
 /* Năm đăng bài ghi rõ trên ảnh */
 .post__year { position: absolute; left: 8px; top: 8px; z-index: 2; padding: 2px 10px; border-radius: 999px; background: rgba(7, 23, 53, .86); color: var(--gold-soft); font-family: var(--serif); font-size: 12.5px; font-weight: 700; letter-spacing: .04em; }
 .post--lead .post__year { left: 16px; top: 16px; font-size: 14px; padding: 4px 14px; background: var(--magenta); color: #fff; }
@@ -450,6 +477,8 @@ body::before { display: none; } /* bỏ hạt giấy ấm */
 .footer__inner { justify-content: center; text-align: center; }
 .footer__copy { color: rgba(255, 255, 255, .7); }
 
+/* ===== src/css/13-mobile.css ===== */
+/* Sửa lỗi hiển thị mobile */
 /* =====================================================================
    MOBILE — sửa lỗi tràn dải số liệu, chấm trang trí đè chữ, v.v.
    ===================================================================== */
@@ -494,15 +523,7 @@ body::before { display: none; } /* bỏ hạt giấy ấm */
 }
 
 </style>
-        <script>
-            // Màn mở đầu 1 lần/phiên (bỏ qua nếu giảm chuyển động)
-            try {
-                if (!sessionStorage.getItem("ttdt-intro") && location.search.indexOf("nointro") === -1 && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-                    document.documentElement.classList.add("has-intro");
-                }
-            } catch (e) {}
-        </script>
-    </head>
+        </head>
     <body>
         <div class="intro" aria-hidden="true">
             <div class="intro__shutter intro__shutter--top"></div>
@@ -607,9 +628,19 @@ body::before { display: none; } /* bỏ hạt giấy ấm */
         </footer>
 
         <button class="to-top" type="button" aria-label="Lên đầu trang">↑</button>
+    <script>
+/* js/main.js */
+/* TỰ ĐỘNG TẠO bởi scripts/build_assets.py — sửa trong src/, không sửa tay file này */
 
-        <script>
-/* js/data.js */
+/* ===== src/js/intro.js ===== */
+/* Bật màn mở đầu 1 lần/phiên (chạy sớm trong <head>, bỏ qua nếu giảm chuyển động hoặc có ?nointro) */
+try {
+    if (!sessionStorage.getItem("ttdt-intro") && location.search.indexOf("nointro") === -1 && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("has-intro");
+    }
+} catch (e) {}
+
+/* ===== src/js/data.js ===== */
 /**
  * TỰ ĐỘNG TẠO bởi scripts/build_data.py — không sửa tay file này.
  * Sửa nội dung ở data/events.json rồi chạy lại script.
@@ -2929,19 +2960,46 @@ window.EVENTS = [
   }
 ];
 
-</script>
-        <script>
-/* js/main.js */
+/* ===== src/js/utils.js ===== */
+/* Tiện ích dùng chung: biến cấu hình, escape/format, đếm số, hiện dần khi cuộn */
 (function () {
-    var site = window.SITE || {};
-    var events = window.EVENTS || []; // mới nhất -> cũ nhất
-    var FIRST_PAGE = 7; // 1 bài nổi bật + 6 bài
-    var NEXT_PAGE = 6;
-    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var T = window.TT = window.TT || {};
+    T.site = window.SITE || {};
+    T.events = window.EVENTS || []; // mới nhất -> cũ nhất
+    T.FIRST_PAGE = 7; // 1 bài nổi bật + 6 bài
+    T.NEXT_PAGE = 6;
+    T.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    T.state = { token: 0 }; // bỏ kết quả API về muộn của năm đã chuyển đi
+    var reduceMotion = T.reduceMotion;
 
-    var yearsEl = document.getElementById("years");
-    var detailEl = document.getElementById("detail");
-    var currentToken = 0; // bỏ kết quả API về muộn của năm đã chuyển đi
+    function esc(str) {
+        return String(str == null ? "" : str).replace(/[&<>"']/g, function (c) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+    }
+    function fmt(n) { return Number(n).toLocaleString("vi-VN"); }
+
+    function fmtDate(iso) {
+        var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+        return m ? m[3] + "/" + m[2] + "/" + m[1] : "";
+    }
+
+    function countUp(el) {
+        var target = parseFloat(el.getAttribute("data-count")) || 0;
+        var suffix = el.getAttribute("data-suffix") || "";
+        var token = el._ct = (el._ct || 0) + 1; // lần chạy mới huỷ lần cũ
+        if (reduceMotion) { el.textContent = fmt(target) + suffix; return; }
+        var start = null;
+        el.textContent = "0" + suffix;
+        function step(ts) {
+            if (token !== el._ct) return;
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / 1400, 1);
+            el.textContent = fmt(Math.round(target * (1 - Math.pow(1 - p, 3)))) + suffix;
+            if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
 
     // Lặp lại: rời màn hình thì ẩn, cuộn quay lại thì hiện lại từ đầu
     var revealIo = new IntersectionObserver(function (entries) {
@@ -2959,22 +3017,21 @@ window.EVENTS = [
         root.querySelectorAll("[data-reveal]").forEach(function (el) { revealIo.observe(el); });
     }
 
-    function esc(str) {
-        return String(str == null ? "" : str).replace(/[&<>"']/g, function (c) {
-            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-        });
-    }
-    function fmt(n) { return Number(n).toLocaleString("vi-VN"); }
+    T.esc = esc;
+    T.fmt = fmt;
+    T.fmtDate = fmtDate;
+    T.countUp = countUp;
+    T.observeReveal = observeReveal;
+})();
 
-    function fmtDate(iso) {
-        var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
-        return m ? m[3] + "/" + m[2] + "/" + m[1] : "";
-    }
-
-    /* ---------------- Render ---------------- */
+/* ===== src/js/render.js ===== */
+/* Dựng HTML: cột năm, chi tiết kỳ Hội nghị, thẻ bài báo */
+(function () {
+    var T = window.TT = window.TT || {};
+    var esc = T.esc, fmtDate = T.fmtDate, events = T.events;
 
     function renderYears() {
-        yearsEl.innerHTML = events.map(function (ev, i) {
+        document.getElementById("years").innerHTML = events.map(function (ev, i) {
             return '<button type="button" class="year' + (i === 0 ? " year--latest" : "") + '" data-year="' + ev.year + '">' +
                 '<span class="year__num">' + ev.year + '<\/span>' +
                 '<span class="year__meta"><b>' + esc(ev.ordinal) + '<\/b><small>' + esc(ev.location) + '<\/small><\/span>' +
@@ -3044,7 +3101,16 @@ window.EVENTS = [
             '<\/div>';
     }
 
-    /* ---------------- API CMS Dân Việt ---------------- */
+    T.renderYears = renderYears;
+    T.renderPost = renderPost;
+    T.renderDetail = renderDetail;
+})();
+
+/* ===== src/js/api.js ===== */
+/* Gọi API CMS Dân Việt (phân trang) */
+(function () {
+    var T = window.TT = window.TT || {};
+
     // https://danviet.vn/api/chu-de/<id> (trang 1), .../<id>/p<n> (trang n); 20 bài/trang, đúng thứ tự biên tập.
 
     function pageUrl(api, n) { return n === 1 ? api : api.replace(/\/$/, "") + "/p" + n; }
@@ -3074,7 +3140,16 @@ window.EVENTS = [
         return src;
     }
 
-    /* ---------------- Danh sách bài + xem thêm ---------------- */
+    T.createApiSource = createApiSource;
+})();
+
+/* ===== src/js/press.js ===== */
+/* Danh sách bài báo + nút "Xem thêm bài" (API, bản dự phòng) */
+(function () {
+    var T = window.TT = window.TT || {};
+    var renderPost = T.renderPost, createApiSource = T.createApiSource, observeReveal = T.observeReveal;
+    var FIRST_PAGE = T.FIRST_PAGE, NEXT_PAGE = T.NEXT_PAGE;
+    var detailEl = document.getElementById("detail");
 
     function setupPress(ev, token) {
         var list = detailEl.querySelector(".press__list");
@@ -3108,7 +3183,7 @@ window.EVENTS = [
         function ensure(count) {
             if (!liveReady || exhausted || items.length >= count || !live.hasMore()) return Promise.resolve();
             return live.fetchNext().then(function (more) {
-                if (token !== currentToken) return;
+                if (token !== T.state.token) return;
                 var seen = {}, added = 0;
                 items.forEach(function (a) { seen[a.id] = true; });
                 more.forEach(function (a) { if (!seen[a.id]) { seen[a.id] = true; items.push(a); added++; } });
@@ -3128,103 +3203,36 @@ window.EVENTS = [
                 moreBtn.textContent = "Đang tải…";
             }
             ensure(want).catch(function (err) { console.warn("Không tải thêm được từ API:", err); })
-                .then(function () { if (token === currentToken) draw(false); });
+                .then(function () { if (token === T.state.token) draw(false); });
         });
 
         draw(true);
         if (!live) return;
 
         live.fetchNext().then(function (first) {
-            if (token !== currentToken || !first.length) return;
+            if (token !== T.state.token || !first.length) return;
             var same = first.length >= shown && items.slice(0, shown).every(function (a, i) { return first[i].id === a.id; });
             items = first;
             liveReady = true;
             if (same) { refreshUi(); return; } // bài đang hiện không đổi: khỏi vẽ lại
             var keep = Math.max(shown, FIRST_PAGE);
-            ensure(keep).catch(function () {}).then(function () { if (token === currentToken) draw(true, keep); });
+            ensure(keep).catch(function () {}).then(function () { if (token === T.state.token) draw(true, keep); });
         }).catch(function (err) {
             console.warn("Không gọi được API, dùng dữ liệu lưu sẵn:", err);
         });
     }
 
-    /* ---------------- Chọn năm ---------------- */
+    T.setupPress = setupPress;
+})();
 
-    function findEvent(year) {
-        for (var i = 0; i < events.length; i++) if (String(events[i].year) === String(year)) return events[i];
-        return null;
-    }
+/* ===== src/js/effects.js ===== */
+/* Hiệu ứng: hero vào sân khấu, parallax chuột, tiến trình cuộn, menu mobile */
+(function () {
+    var T = window.TT = window.TT || {};
+    var reduceMotion = T.reduceMotion;
 
-    function select(year, opts) {
-        var ev = findEvent(year);
-        if (!ev) return;
-        opts = opts || {};
-        currentToken += 1;
-        yearsEl.querySelectorAll(".year").forEach(function (b) {
-            var on = b.getAttribute("data-year") === String(ev.year);
-            b.classList.toggle("is-active", on);
-            b.setAttribute("aria-pressed", on ? "true" : "false");
-            if (on && yearsEl.scrollWidth > yearsEl.clientWidth) {
-                yearsEl.scrollTo({ left: b.offsetLeft - 20, behavior: reduceMotion ? "auto" : "smooth" });
-            }
-        });
-        detailEl.innerHTML = renderDetail(ev);
-        observeReveal(detailEl);
-        setupPress(ev, currentToken);
-        if (opts.updateHash) history.replaceState(null, "", "#" + ev.year);
-        if (opts.scroll) {
-            document.getElementById("archive").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
-        }
-    }
-
-    /* ---------------- Số đếm ở hero ---------------- */
-
-    function countUp(el) {
-        var target = parseFloat(el.getAttribute("data-count")) || 0;
-        var suffix = el.getAttribute("data-suffix") || "";
-        var token = el._ct = (el._ct || 0) + 1; // lần chạy mới huỷ lần cũ
-        if (reduceMotion) { el.textContent = fmt(target) + suffix; return; }
-        var start = null;
-        el.textContent = "0" + suffix;
-        function step(ts) {
-            if (token !== el._ct) return;
-            if (!start) start = ts;
-            var p = Math.min((ts - start) / 1400, 1);
-            el.textContent = fmt(Math.round(target * (1 - Math.pow(1 - p, 3)))) + suffix;
-            if (p < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-    }
-
-    /* ---------------- Khởi tạo ---------------- */
-
-    function init() {
-        if (site.kicker) document.getElementById("hero-kicker").textContent = site.kicker;
-        if (site.desc) document.getElementById("hero-desc").textContent = site.desc;
-        if (events[0] && events[0].cover) document.getElementById("hero-img").src = events[0].cover;
-
-        renderYears();
-
-        yearsEl.addEventListener("click", function (e) {
-            var btn = e.target.closest(".year");
-            if (btn) select(btn.getAttribute("data-year"), { updateHash: true });
-        });
-        // Liên kết dạng #2025 ở nơi khác trên trang
-        document.addEventListener("click", function (e) {
-            var a = e.target.closest('a[href^="#20"]');
-            if (!a) return;
-            e.preventDefault();
-            select(a.getAttribute("href").slice(1), { updateHash: true, scroll: true });
-        });
-
-        var fromHash = (location.hash || "").replace("#", "");
-        select(findEvent(fromHash) ? fromHash : events[0].year);
-        if (findEvent(fromHash)) {
-            setTimeout(function () { document.getElementById("archive").scrollIntoView(); }, 50);
-        }
-
-        // Hiện dần các khối [data-reveal] mỗi lần cuộn tới
-        observeReveal(document);
-
+    // Hiệu ứng toàn trang: hero, parallax, thanh tiến trình, menu, nút lên đầu
+    T.initEffects = function () {
         // Hero: rời màn hình thì reset, cuộn lên lại thì chạy lại hiệu ứng vào sân khấu
         var heroEl = document.querySelector(".hero");
         if (heroEl) {
@@ -3239,9 +3247,6 @@ window.EVENTS = [
             // Sau màn mở đầu, các lần phát lại không cần chờ
             setTimeout(function () { document.documentElement.style.setProperty("--intro", "0s"); }, 3500);
         }
-
-        // Màn mở đầu chỉ chạy 1 lần/phiên
-        try { sessionStorage.setItem("ttdt-intro", "1"); } catch (e) {}
 
         // Parallax theo chuột ở hero
         var hero = document.querySelector(".hero");
@@ -3286,11 +3291,80 @@ window.EVENTS = [
         nav.addEventListener("click", function (e) {
             if (e.target.closest("a")) { nav.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); }
         });
+    };
+})();
+
+/* ===== src/js/main.js ===== */
+/* Khởi tạo trang: chọn năm, điều hướng theo #năm */
+(function () {
+    var T = window.TT = window.TT || {};
+    var events = T.events, site = T.site, reduceMotion = T.reduceMotion, observeReveal = T.observeReveal;
+    var yearsEl = document.getElementById("years");
+    var detailEl = document.getElementById("detail");
+
+    function findEvent(year) {
+        for (var i = 0; i < events.length; i++) if (String(events[i].year) === String(year)) return events[i];
+        return null;
+    }
+
+    function select(year, opts) {
+        var ev = findEvent(year);
+        if (!ev) return;
+        opts = opts || {};
+        T.state.token += 1;
+        yearsEl.querySelectorAll(".year").forEach(function (b) {
+            var on = b.getAttribute("data-year") === String(ev.year);
+            b.classList.toggle("is-active", on);
+            b.setAttribute("aria-pressed", on ? "true" : "false");
+            if (on && yearsEl.scrollWidth > yearsEl.clientWidth) {
+                yearsEl.scrollTo({ left: b.offsetLeft - 20, behavior: reduceMotion ? "auto" : "smooth" });
+            }
+        });
+        detailEl.innerHTML = T.renderDetail(ev);
+        observeReveal(detailEl);
+        T.setupPress(ev, T.state.token);
+        if (opts.updateHash) history.replaceState(null, "", "#" + ev.year);
+        if (opts.scroll) {
+            document.getElementById("archive").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+        }
+    }
+
+    function init() {
+        if (site.kicker) document.getElementById("hero-kicker").textContent = site.kicker;
+        if (site.desc) document.getElementById("hero-desc").textContent = site.desc;
+        if (events[0] && events[0].cover) document.getElementById("hero-img").src = events[0].cover;
+
+        T.renderYears();
+
+        yearsEl.addEventListener("click", function (e) {
+            var btn = e.target.closest(".year");
+            if (btn) select(btn.getAttribute("data-year"), { updateHash: true });
+        });
+        // Liên kết dạng #2025 ở nơi khác trên trang
+        document.addEventListener("click", function (e) {
+            var a = e.target.closest('a[href^="#20"]');
+            if (!a) return;
+            e.preventDefault();
+            select(a.getAttribute("href").slice(1), { updateHash: true, scroll: true });
+        });
+
+        var fromHash = (location.hash || "").replace("#", "");
+        select(findEvent(fromHash) ? fromHash : events[0].year);
+        if (findEvent(fromHash)) {
+            setTimeout(function () { document.getElementById("archive").scrollIntoView(); }, 50);
+        }
+
+        // Hiện dần các khối [data-reveal] mỗi lần cuộn tới
+        observeReveal(document);
+
+        T.initEffects();
+
+        // Màn mở đầu chỉ chạy 1 lần/phiên
+        try { sessionStorage.setItem("ttdt-intro", "1"); } catch (e) {}
     }
 
     init();
 })();
 
-</script>
-    </body>
+</script></body>
 </html>

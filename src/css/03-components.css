@@ -1,0 +1,35 @@
+/* Thanh tiến trình, nút, nhãn, hiệu ứng hiện dần */
+/* ---------- Thanh tiến trình & nút ---------- */
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 120; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, var(--red) 0 60%, var(--gold) 60% 100%); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border: 2px solid var(--navy-900); border-radius: 2px; background: transparent; font-weight: 700; font-size: 14px; letter-spacing: .02em; color: var(--navy-900); transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .2s, color .2s; }
+.btn span { display: inline-block; transition: transform .25s var(--ease); }
+.btn:hover { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--navy-900); }
+.btn:hover span { transform: translateX(4px); }
+.btn:active { transform: none; box-shadow: none; }
+.btn--primary { background: var(--magenta); border-color: var(--magenta); color: #fff; }
+.btn--ghost:hover { background: var(--navy-900); color: #fff; box-shadow: 5px 5px 0 var(--gold); }
+.btn--outline { padding: 12px 22px; }
+.btn--outline:hover { background: var(--navy-900); color: #fff; box-shadow: 5px 5px 0 var(--gold); }
+.btn:disabled { opacity: .55; cursor: progress; }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--magenta-700); }
+.eyebrow::before { content: ""; width: 34px; height: 2px; background: var(--magenta); }
+.eyebrow--dark { color: var(--navy-700); }
+.eyebrow--dark::before { background: var(--navy-700); }
+
+/* ---------- Hiện dần khi cuộn ---------- */
+[data-reveal] { opacity: 0; transform: translateY(32px); transition: opacity .8s var(--ease) var(--d, 0s), transform .8s var(--ease) var(--d, 0s); }
+[data-reveal].is-in { opacity: 1; transform: none; clip-path: none; }
+[data-reveal="left"] { transform: translateX(-56px); }
+[data-reveal="right"] { transform: translateX(56px); }
+[data-reveal="zoom"] { transform: scale(.9) translateY(24px); }
+[data-reveal="clip"] { opacity: 1; transform: none; clip-path: inset(0 100% 0 0); transition: clip-path 1.1s var(--ease) var(--d, 0s); }
+[data-reveal="clip"].is-in { clip-path: inset(0 0 0 0); }
+/* Hero reset khi rời màn hình để chạy lại khi cuộn về */
+.hero.is-off .hero-in, .hero.is-off .ln > span, .hero.is-off .stamp, .hero.is-off .hero__title em::after { animation: none; }
+
+/* Hero vào sân khấu khi tải trang (sau màn mở đầu) */
+.hero-in { opacity: 0; transform: translateY(26px); animation: heroIn 1s var(--ease) forwards; animation-delay: calc(var(--d, 0s) + var(--intro, 0s)); }
+.has-intro { --intro: 1.9s; }
+@keyframes heroIn { to { opacity: 1; transform: none; } }

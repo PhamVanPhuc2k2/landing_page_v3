@@ -1,0 +1,15 @@
+/* Màn mở đầu */
+/* ---------- Màn mở đầu ---------- */
+.intro { display: none; }
+.has-intro .intro { display: block; position: fixed; inset: 0; z-index: 200; pointer-events: none; animation: introHide 0s 2.3s forwards; }
+.intro__shutter { position: absolute; left: 0; right: 0; height: 50.5%; background: var(--navy-950); }
+.intro__shutter--top { top: 0; animation: shutTop .9s var(--ease) 1.3s forwards; }
+.intro__shutter--bottom { bottom: 0; animation: shutBot .9s var(--ease) 1.3s forwards; }
+.intro__label { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; color: #fff; animation: introLabel 1.4s var(--ease) forwards; }
+.intro__label span { font-size: 13px; letter-spacing: .4em; text-transform: uppercase; color: var(--gold); }
+.intro__label b { font-family: var(--serif); font-size: clamp(26px, 5vw, 52px); font-weight: 800; padding: 0 20px; }
+.intro__label i { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--sky-300); }
+@keyframes shutTop { to { transform: translateY(-101%); } }
+@keyframes shutBot { to { transform: translateY(101%); } }
+@keyframes introLabel { 0% { opacity: 0; transform: translateY(16px); } 25%, 70% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-10px); } }
+@keyframes introHide { to { visibility: hidden; } }

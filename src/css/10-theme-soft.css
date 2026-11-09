@@ -1,0 +1,75 @@
+/* Làm mềm: bo góc, bóng nhẹ */
+/* =====================================================================
+   LÀM MỀM — bo góc, bóng đổ nhẹ, bỏ viền dày/góc nhọn
+   ===================================================================== */
+body::before { opacity: .28; }
+.hero { overflow: clip; padding-bottom: 52px; }
+
+/* Nút */
+.btn { border-radius: 999px; border-width: 1.5px; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(12, 37, 82, .2); }
+.btn--primary:hover { box-shadow: 0 12px 28px rgba(200, 29, 99, .38); }
+.btn--ghost:hover, .btn--outline:hover { box-shadow: 0 12px 26px rgba(12, 37, 82, .25); }
+.btn:active { transform: none; box-shadow: none; }
+.topbar__toggle { border-radius: 12px; }
+.brand__mark { border-radius: 11px; }
+.to-top { border-radius: 50%; border-width: 1.5px; box-shadow: 0 8px 20px rgba(12, 37, 82, .18); }
+
+/* Hero */
+.hero__block { border-radius: 32px; }
+.print { border-radius: 14px; }
+.print__img { border-radius: 8px; }
+.print__tape { border-radius: 4px; }
+.facts {
+    background: rgba(255, 255, 255, .72); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .95); border-radius: 28px; padding: 6px 12px;
+    box-shadow: 0 22px 44px -22px rgba(12, 37, 82, .3);
+}
+.facts li { padding: 22px 22px; }
+.facts li + li { padding-left: 26px; border-left: 1px solid var(--line-soft); }
+.ticker { border: 0; transform: rotate(-.5deg) scale(1.02); box-shadow: 0 14px 30px -14px rgba(7, 23, 53, .45); }
+
+/* Cột năm */
+.years { border-top: 0; gap: 6px; }
+.year { border-bottom: 0; border-radius: 18px; padding: 14px 18px; }
+.year::before { border-radius: 18px; }
+.year:hover { background: rgba(12, 37, 82, .06); }
+.year.is-active:hover { background: transparent; }
+
+/* Chi tiết */
+.banner { border-radius: 28px; border-bottom: 0; box-shadow: 0 26px 50px -24px rgba(7, 23, 53, .55); }
+.banner__tag { clip-path: none; border-radius: 999px; right: 20px; top: 20px; padding: 8px 18px; box-shadow: 0 8px 18px rgba(200, 29, 99, .35); }
+.info__theme { border-left: 0; background: linear-gradient(135deg, rgba(246, 227, 168, .6), rgba(246, 227, 168, .22)); border-radius: 22px; padding: 18px 26px; }
+.facts-card { border-top: 0; background: #fff; border-radius: 26px; padding: 8px 26px 22px; box-shadow: 0 18px 38px -22px rgba(12, 37, 82, .32); }
+.facts-card dl > div:last-child { border-bottom: 0; }
+.press__head { border-bottom: 1px solid var(--line); }
+
+/* Bài báo: thẻ bo tròn */
+.press__list { column-gap: 18px; row-gap: 14px; }
+.post {
+    padding: 12px; border: 0; border-radius: 22px; background: rgba(255, 255, 255, .62);
+    transition: opacity .8s var(--ease) var(--d, 0s), transform .8s var(--ease) var(--d, 0s), background .35s, box-shadow .4s;
+}
+.post:hover { background: #fff; box-shadow: 0 18px 36px -20px rgba(12, 37, 82, .38); }
+.post__thumb { border-radius: 15px; }
+.post--lead { grid-column: 1 / -1; padding: 0; border-radius: 30px; overflow: hidden; background: var(--navy-900); box-shadow: 0 26px 50px -26px rgba(7, 23, 53, .6); margin-bottom: 4px; }
+.post--lead:hover { background: var(--navy-900); }
+.post--lead .post__thumb { border-radius: 0; }
+
+.footer { border-top: 0; border-radius: 40px 40px 0 0; }
+
+@media (max-width: 1023px) {
+    .years { gap: 8px; padding-top: 8px; padding-bottom: 8px; border-bottom: 0; }
+    .year, .year::before { border-radius: 999px; }
+    .facts li:nth-child(odd) { padding-left: 22px; border-left: 0; }
+    .facts li:nth-child(n+3) { border-top: 1px solid var(--line-soft); }
+}
+@media (max-width: 767px) {
+    .hero { padding-bottom: 36px; }
+    .facts { border-radius: 22px; padding: 4px 6px; }
+    .facts li { padding: 16px 14px; }
+    .facts li:nth-child(even) { padding-left: 18px; }
+    .banner { border-radius: 22px; }
+    .post--lead { border-radius: 24px; }
+    .footer { border-radius: 28px 28px 0 0; }
+}

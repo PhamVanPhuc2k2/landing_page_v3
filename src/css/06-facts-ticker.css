@@ -1,0 +1,15 @@
+/* Dải số liệu và dải chữ chạy */
+/* ---------- Số liệu ---------- */
+.facts { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; border-top: 3px solid var(--navy-900); }
+.facts li { display: flex; align-items: center; gap: 16px; padding: 24px 20px 26px 0; }
+.facts li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+.facts b { font-family: var(--serif); font-size: 58px; font-weight: 800; line-height: 1; color: var(--navy-900); font-variant-numeric: lining-nums tabular-nums; }
+.facts span { font-size: 13px; line-height: 1.4; color: var(--muted); }
+
+/* ---------- Dải chữ chạy ---------- */
+.ticker { overflow: hidden; background: var(--navy-900); color: var(--gold-soft); border-block: 4px solid var(--red); transform: rotate(-.6deg) scale(1.02); position: relative; z-index: 3; }
+.ticker__track { display: flex; width: max-content; animation: ticker 38s linear infinite; }
+.ticker__track span { padding: 14px 0; font-family: var(--serif); font-style: italic; font-size: 22px; white-space: nowrap; }
+.ticker__track i { font-style: normal; color: var(--gold); margin: 0 14px; font-size: 16px; }
+.ticker:hover .ticker__track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-33.3333%); } }

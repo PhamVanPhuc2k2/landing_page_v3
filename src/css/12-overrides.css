@@ -1,0 +1,9 @@
+/* Nhãn năm trên ảnh, chân trang gọn */
+/* Năm đăng bài ghi rõ trên ảnh */
+.post__year { position: absolute; left: 8px; top: 8px; z-index: 2; padding: 2px 10px; border-radius: 999px; background: rgba(7, 23, 53, .86); color: var(--gold-soft); font-family: var(--serif); font-size: 12.5px; font-weight: 700; letter-spacing: .04em; }
+.post--lead .post__year { left: 16px; top: 16px; font-size: 14px; padding: 4px 14px; background: var(--magenta); color: #fff; }
+.press__head h3 em { font-style: italic; color: var(--magenta-700); font-weight: 700; }
+.press__count:empty { display: none; }
+.footer { padding: 30px 0; }
+.footer__inner { justify-content: center; text-align: center; }
+.footer__copy { color: rgba(255, 255, 255, .7); }

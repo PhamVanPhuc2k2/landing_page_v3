@@ -1,0 +1,49 @@
+/* Biến màu, reset, bố cục chung */
+/* =====================================================================
+   Thủ tướng đối thoại với nông dân (2019 – 2025)
+   Hướng thiết kế: "toà soạn" — giấy có hạt, chữ serif, đường kẻ mảnh, ảnh như ảnh in.
+   Màu lấy từ phông Hội nghị 2025: xanh da trời + lục giác, navy, đỏ hồng, vàng gỗ, đỏ–vàng cờ.
+   ===================================================================== */
+
+:root {
+    --navy-950: #071735;
+    --navy-900: #0c2552;
+    --navy-800: #123470;
+    --navy-700: #1a4a96;
+    --blue-500: #2e86d1;
+    --sky-300: #a9d6f0;
+    --sky-200: #cfe8f6;
+    --sky-100: #e6f3fb;
+    --paper: #f8f5ee;
+    --magenta: #c81d63;
+    --magenta-700: #a3154d;
+    --red: #da251d;
+    --gold: #e0a526;
+    --gold-soft: #f6e3a8;
+    --wood: #8a5a22;
+    --ink: #13203d;
+    --muted: #51607c;
+    --line: rgba(12, 37, 82, 0.2);
+    --line-soft: rgba(12, 37, 82, 0.1);
+
+    --font: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --serif: "Playfair Display", "Times New Roman", serif;
+    --ease: cubic-bezier(.2, .8, .2, 1);
+    --header-h: 64px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); font-size: 16px; line-height: 1.65; color: var(--ink); background: var(--paper); overflow-x: hidden; }
+/* Hạt giấy toàn trang */
+body::before {
+    content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+h1, h2, h3, h4, p, ul, figure, dl { margin: 0; }
+ul { padding: 0; list-style: none; }
+.wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+:focus-visible { outline: 2px solid var(--magenta); outline-offset: 3px; }
