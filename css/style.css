@@ -434,3 +434,46 @@ body::before { display: none; } /* bỏ hạt giấy ấm */
 .footer { padding: 30px 0; }
 .footer__inner { justify-content: center; text-align: center; }
 .footer__copy { color: rgba(255, 255, 255, .7); }
+
+/* =====================================================================
+   MOBILE — sửa lỗi tràn dải số liệu, chấm trang trí đè chữ, v.v.
+   ===================================================================== */
+@media (max-width: 767px) {
+    .wrap { width: min(1180px, 100% - 32px); }
+    .dot { display: none; }
+    .hero__title { font-size: clamp(38px, 11.5vw, 52px); }
+    .hero__desc { font-size: 16px; }
+    .hero__actions .btn { flex: 1 1 100%; }
+
+    /* Dải số liệu 2×2, không tràn */
+    .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 2px 4px; }
+    .facts li { flex-direction: column; align-items: flex-start; gap: 4px; padding: 16px 14px; min-width: 0; }
+    .facts li:nth-child(odd) { padding-left: 14px; border-left: 0; }
+    .facts li:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--line-soft); }
+    .facts li:nth-child(n+3) { border-top: 1px solid var(--line-soft); }
+    .facts b { font-size: 34px; }
+    .facts span { white-space: normal; font-size: 12px; }
+
+    .section-head { margin-bottom: 32px; }
+    .section-head h2 { font-size: clamp(28px, 8.4vw, 38px); }
+    .info__title { font-size: 24px; }
+    .info__theme { font-size: 17px; padding: 14px 18px; }
+    .facts-card { padding: 4px 20px 18px; }
+
+    .press { margin-top: 44px; }
+    .press__head h3 { font-size: 22px; line-height: 1.25; }
+    .press__head h3 em { white-space: nowrap; }
+
+    .post { grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 10px; }
+    .post__title { font-size: 15.5px; }
+    .post__year { font-size: 10.5px; padding: 1px 8px; left: 5px; top: 5px; }
+    .post--lead .post__year { font-size: 12px; padding: 3px 12px; left: 12px; top: 12px; }
+    .post--lead .post__title { font-size: 21px; }
+
+    .footer__inner { align-items: center; justify-content: center; text-align: center; }
+    .to-top { right: 14px; bottom: 14px; }
+}
+@media (max-width: 360px) {
+    .brand__text small { max-width: 150px; }
+    .facts b { font-size: 30px; }
+}
